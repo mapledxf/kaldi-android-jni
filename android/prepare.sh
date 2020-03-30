@@ -9,7 +9,7 @@ ln -s android-ndk-r20 android-sdk-linux/ndk-bundle
 # Need to use command line tool to get sdkmanager
 cd android-sdk-linux/
 export ANDROID_HOME=$PWD
-yes | android-sdk-linux/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
+yes | ./tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
 
 #cd android-sdk-linux/tools
 #./android update sdk --no-ui --filter platform-tools,tools
